@@ -25,3 +25,39 @@ a {
 .logo-color{
   color: #02B3A7;
 }
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+  color: white; /* Default icon color */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Scale up the icon on hover */
+  color: #02B3A7; /* Change color on hover */
+}
+
+.navbar-links a {
+  color: white; /* Default text color */
+  padding: 10px 15px; /* Adjust padding for spacing */
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px; /* Height of the bottom border */
+  background-color: #02B3A7; /* Border color on hover */
+  bottom: 0; /* Positioning the border at the bottom */
+  left: 0;
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-links a:hover::after {
+  width: 100%; /* Border grows to full width on hover */
+}
+
+.navbar-links a:hover {
+  color: white; /* Keep the text color unchanged on hover */
+}
+
