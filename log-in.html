@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="toggle-buttons">
+        <button id="loginBtn" onclick="toggleForm('login')">Login</button>
+        <button id="signupBtn" onclick="toggleForm('signup')">Sign Up</button>
+      </div>
+
+<!-- Login Form -->
+<form id="loginForm" class="input-group">
+  <h2>Login</h2>
+  <input type="email" class="input-field" placeholder="Email" required>
+  <input type="password" class="input-field" placeholder="Password" required>
+  <div class="checkbox-container">
+    <input type="checkbox" class="check-box" id="remember-me">
+    <label for="remember-me">Remember Me</label>
+  </div>
+  <button type="submit" class="submit-btn">Login</button>
+</form>
+
+      <!-- Sign Up Form -->
+      <form id="signupForm" class="input-group hidden">
+        <h2>Sign Up</h2>
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="email" class="input-field" placeholder="Email" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <div class="checkbox-container">
+          <input type="checkbox" class="check-box" id="terms">
+          <label for="terms">I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function toggleForm(form) {
+      let loginForm = document.getElementById('loginForm');
+      let signupForm = document.getElementById('signupForm');
+      let loginBtn = document.getElementById('loginBtn');
+      let signupBtn = document.getElementById('signupBtn');
+
+      if (form === 'login') {
+        loginForm.classList.remove('hidden');
+        signupForm.classList.add('hidden');
+        loginBtn.classList.add('active');
+        signupBtn.classList.remove('active');
+      } else {
+        signupForm.classList.remove('hidden');
+        loginForm.classList.add('hidden');
+        signupBtn.classList.add('active');
+        loginBtn.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+
+</html>
