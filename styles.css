@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.brand{
+  color: #162E44;
+}
+
+.bg-brand{
+  background-color  : #162E44;
+}
+
+.logo-color{
+  color: #02B3A7;
+}
+
