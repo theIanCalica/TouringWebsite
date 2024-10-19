@@ -241,3 +241,29 @@ a {
         color: white; /* Keep the text color unchanged on hover */
       }
 
+      .banner {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background-image: url('banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .breadcrumbs {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      .breadcrumbs a {
+        color: white;
+        text-decoration: none;
+      }
+      .breadcrumbs a:hover {
+        text-decoration: underline;
+      }
