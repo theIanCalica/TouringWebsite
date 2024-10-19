@@ -9,18 +9,92 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
 .brand{
   color: #162E44;
 }
 
 .bg-brand{
-  background-color  : #162E44;
+  background-color: #162E44;
 }
 
 .logo-color{
   color: #02B3A7;
 }
+        .footer {
+            background-color: #102a43;
+            color: #fff;
+            padding: 40px 20px;
+            margin-top: 100%;
+        }
 
+        .footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1 1 30%;
+            padding: 10px;
+            min-width: 250px;
+        }
+
+        h3 {
+            color: #4ce0b3;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p, .footer li {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .btn {
+            background-color: #4ce0b3;
+            color: #102a43;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .footer .btn:hover {
+            background-color: #3cb28d;
+        }
+
+        @media (max-width: 768px) {
+            .footer .container {
+                flex-direction: column;
+            }
+            .footer-column {
+                margin-bottom: 30px;
+            }
+        }
 
 
 
@@ -93,4 +167,42 @@ html, body {
             .footer-column {
                 margin-bottom: 30px;
             }
+        }
+
+/*CONTACT US*/
+
+        .contact-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+        .card-body h5 {
+            color: #4ce0b3;
+            font-weight: bold;
+        }
+        .card {
+            border: none;
+            text-align: center;
+        }
+        .get-in-touch-section {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        .get-in-touch-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .form-row .form-group {
+            margin-right: 10px;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .btn-primary {
+            background-color: #4ce0b3;
+            border-color: #4ce0b3;
+        }
+        .btn-primary:hover {
+            background-color: #3cb28d;
+            border-color: #3cb28d;
         }
