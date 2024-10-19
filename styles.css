@@ -176,14 +176,31 @@ h3 {
     padding: 50px 0;
     background-color: #f8f9fa;
 }
-.card-body h5 {
-    color: #4ce0b3;
-    font-weight: bold;
-}
+
 .card {
     border: none;
     text-align: center;
+    padding: 20px; /* Increase padding for larger size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
+.card-body h5 {
+    color: #4ce0b3;
+    font-weight: bold;
+    font-size: 24px; /* Larger font size */
+}
+
+.card-text {
+    font-size: 18px; /* Increase text size */
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
 .get-in-touch-section {
     padding: 50px 0;
     background-color: #fff;
@@ -193,6 +210,7 @@ h3 {
     padding: 30px;
     border-radius: 10px;
 }
+
 .form-row .form-group {
     margin-right: 10px;
 }
