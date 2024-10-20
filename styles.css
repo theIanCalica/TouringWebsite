@@ -286,3 +286,18 @@ text-decoration: none;
 .breadcrumbs a:hover {
 text-decoration: underline;
 }
+
+/* Initially, the width of the progress bars is set to 0 */
+.progress-bar {
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  
+  /* Optional: Animated fill-in effect */
+  .progress-bar-fill {
+    width: 0%;
+    transition: width 1.5s ease-in-out;
+  }
+
+  
+  
