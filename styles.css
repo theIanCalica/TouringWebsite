@@ -275,10 +275,10 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: white;
-background-color: rgba(0, 0, 0, 0.6);
 padding: 10px 20px;
 border-radius: 5px;
 }
+
 .breadcrumbs a {
 color: white;
 text-decoration: none;
